@@ -1,22 +1,28 @@
-﻿int playerHP = 100;
-int playerFuel = 0;
-
-Console.WriteLine("---- 비행기 내구도와 연료 연산---");
-
-// 1. 논리연산자 활용하기
-
-if (playerHP == 0 || playerFuel == 0)
+using System;
+class Program
 {
-    Console.WriteLine("비행기 추락!");
-}
-else
-{
-    if (playerHP > 50 && playerFuel >50)
+    static void Main()
     {
-        Console.WriteLine("상태와 연료량 양호!");
-    }
-    else
-    {
-        Console.WriteLine("비행시 주의필요!");
+        Console.WriteLine("--- 10일차: 키보드 또는 모바일 터치 입력 시스템 시뮬레이션");
+
+        float inputX = 0.0f;
+        sting currentPlatform = "PC";
+
+        if (currentPlatform == "PC")
+        {
+            float virtuaKeyboardInput = 1.0f;
+            inputX = virtuaKeyboardInput;
+            Console.WriteLine($"[{currentPlatform}] 키보드 입력감지: {virtuaKeyboardInput}");            
+        }
+        else if (currentPlatform == "Mobile")
+        {
+            float virtuaKeyborardInput = 1.0f;
+            inputX = virtuaKeyboardInput;
+            Console.Writeline($"[{currentPlatform}] 키보드 입력감지: {virtuaKeyboardInput}")
+        }
+        float moveSpeed = 5.5f;
+        float finalMovement = inputX * moveSpeed;
     }
 }
+
+    
